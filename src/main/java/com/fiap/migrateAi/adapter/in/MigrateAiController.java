@@ -5,11 +5,9 @@ import com.fiap.migrateAi.application.domain.entity.response.CodeResponseDTO;
 import com.fiap.migrateAi.port.in.IMigrate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/migrate")
 @RestController
 public class MigrateAiController {
